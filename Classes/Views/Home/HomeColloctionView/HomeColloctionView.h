@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeColloctionView : UIView
+
 -(void)refreshColloction:(NSMutableArray*)arr;
 @end

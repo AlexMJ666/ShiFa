@@ -81,7 +81,7 @@
         return kImageH;
     }else if (indexPath.section == 1)
     {
-        return 120;
+        return 75;
     }
     return kImageH;
 }
@@ -89,10 +89,31 @@
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString* Celled = @"homeCell";
-    HomeViewCell* cell = [tableView dequeueReusableCellWithIdentifier:Celled];
-    if (!cell) {
-        cell = [[HomeViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:Celled];
+    HomeViewCell* cell;
+    
+    switch (indexPath.section) {
+        case 0:
+            cell = [tableView dequeueReusableCellWithIdentifier:Celled];
+            if (!cell) {
+                cell = [[HomeViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:Celled];
+            }
+            break;
+        case 1:
+            cell = [tableView dequeueReusableCellWithIdentifier:@"secondCell"];
+            if (!cell) {
+                cell = [[HomeViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"secondCell"];
+            }
+            break;
+        case 2:
+            cell = [tableView dequeueReusableCellWithIdentifier:Celled];
+            if (!cell) {
+                cell = [[HomeViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:Celled];
+            }
+            break;
+        default:
+            break;
     }
+    
     [cell addDifferentCellWFromSection:indexPath.section andCell:cell andDate:self.HomeDateDic];
     return cell;
 }

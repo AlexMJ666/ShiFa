@@ -12,7 +12,7 @@
 
 @end
 @implementation HomeViewCell
-
+@synthesize homeColloctionView;
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
@@ -36,9 +36,7 @@
         [cell.contentView addSubview:slideView];
     }else if (section == 1)
     {
-        HomeColloctionView* homeColloctionView = [[HomeColloctionView alloc]initWithFrame:CGRectMake(0, 0, kMainScreen_Width, 120)];
         [homeColloctionView refreshColloction:model.m_itemNamesArr];
-        [cell.contentView addSubview:homeColloctionView];
     }
 }
 
