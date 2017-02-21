@@ -1,0 +1,922 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14C5425945FD6D166A38F895 /* libPods-ShiFa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7534FD9892CC47A69893DDC /* libPods-ShiFa.a */; };
+		403D33E680A4FCD18E60F8C3 /* libPods-ShiFa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F09C25C81D32D73350ABE9 /* libPods-ShiFa.a */; };
+		533026501E2DB50500A6C284 /* MPhotoBrower.m in Sources */ = {isa = PBXBuildFile; fileRef = 5330264F1E2DB50500A6C284 /* MPhotoBrower.m */; };
+		53ED1D141E1BA4D3009A43BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D131E1BA4D3009A43BF /* main.m */; };
+		53ED1D171E1BA4D3009A43BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D161E1BA4D3009A43BF /* AppDelegate.m */; };
+		53ED1D1D1E1BA4D3009A43BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53ED1D1B1E1BA4D3009A43BF /* Main.storyboard */; };
+		53ED1D1F1E1BA4D3009A43BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53ED1D1E1E1BA4D3009A43BF /* Assets.xcassets */; };
+		53ED1D221E1BA4D3009A43BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53ED1D201E1BA4D3009A43BF /* LaunchScreen.storyboard */; };
+		53ED1D2D1E1BA4D3009A43BF /* ShiFaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D2C1E1BA4D3009A43BF /* ShiFaTests.m */; };
+		53ED1D381E1BA4D3009A43BF /* ShiFaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D371E1BA4D3009A43BF /* ShiFaUITests.m */; };
+		53ED1D561E1DDD82009A43BF /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D551E1DDD82009A43BF /* BaseModel.m */; };
+		53ED1D591E1DDDB1009A43BF /* BaseHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D581E1DDDB1009A43BF /* BaseHttpService.m */; };
+		53ED1D5D1E1DDDD1009A43BF /* ErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D5C1E1DDDD1009A43BF /* ErrorModel.m */; };
+		53ED1D601E1DDE59009A43BF /* HttpShiFa.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D5F1E1DDE59009A43BF /* HttpShiFa.m */; };
+		53ED1D641E1DDF43009A43BF /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D631E1DDF43009A43BF /* Common.m */; };
+		53ED1D671E1DDF57009A43BF /* CommonDeal.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D661E1DDF57009A43BF /* CommonDeal.m */; };
+		53ED1D6C1E1DE1EE009A43BF /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D6B1E1DE1EE009A43BF /* MBProgressHUD+Add.m */; };
+		53ED1D721E1DE222009A43BF /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D6F1E1DE222009A43BF /* MBProgressHUD.m */; };
+		53ED1D731E1DE222009A43BF /* YBProgressShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D711E1DE222009A43BF /* YBProgressShow.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		53ED1D771E1DE270009A43BF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D761E1DE270009A43BF /* Reachability.m */; };
+		53ED1D7B1E1DEC89009A43BF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D7A1E1DEC89009A43BF /* HomeViewController.m */; };
+		53ED1D7F1E1DECA4009A43BF /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D7E1E1DECA4009A43BF /* HomeView.m */; };
+		53ED1D831E1DF01F009A43BF /* HomeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D821E1DF01F009A43BF /* HomeViewCell.m */; };
+		53ED1D871E1E3915009A43BF /* ImageSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D861E1E3915009A43BF /* ImageSliderView.m */; };
+		53ED1D8B1E1E4413009A43BF /* HomeColloctionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D8A1E1E4413009A43BF /* HomeColloctionView.m */; };
+		53ED1D8F1E1F6041009A43BF /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D8E1E1F6041009A43BF /* HomeModel.m */; };
+		53ED1D931E24B926009A43BF /* HomePushView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D921E24B926009A43BF /* HomePushView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53ED1D291E1BA4D3009A43BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53ED1D071E1BA4D3009A43BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53ED1D0E1E1BA4D3009A43BF;
+			remoteInfo = ShiFa;
+		};
+		53ED1D341E1BA4D3009A43BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53ED1D071E1BA4D3009A43BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53ED1D0E1E1BA4D3009A43BF;
+			remoteInfo = ShiFa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		010698B06E6FBD1DF2AA35B1 /* Pods-ShiFa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShiFa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShiFa/Pods-ShiFa.debug.xcconfig"; sourceTree = "<group>"; };
+		5330264E1E2DB50500A6C284 /* MPhotoBrower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPhotoBrower.h; sourceTree = "<group>"; };
+		5330264F1E2DB50500A6C284 /* MPhotoBrower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPhotoBrower.m; sourceTree = "<group>"; };
+		53ED1D0F1E1BA4D3009A43BF /* ShiFa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShiFa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53ED1D131E1BA4D3009A43BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53ED1D151E1BA4D3009A43BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		53ED1D161E1BA4D3009A43BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		53ED1D1C1E1BA4D3009A43BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53ED1D1E1E1BA4D3009A43BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53ED1D211E1BA4D3009A43BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		53ED1D231E1BA4D3009A43BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53ED1D281E1BA4D3009A43BF /* ShiFaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShiFaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53ED1D2C1E1BA4D3009A43BF /* ShiFaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShiFaTests.m; sourceTree = "<group>"; };
+		53ED1D2E1E1BA4D3009A43BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53ED1D331E1BA4D3009A43BF /* ShiFaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShiFaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53ED1D371E1BA4D3009A43BF /* ShiFaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShiFaUITests.m; sourceTree = "<group>"; };
+		53ED1D391E1BA4D3009A43BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53ED1D541E1DDD82009A43BF /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		53ED1D551E1DDD82009A43BF /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		53ED1D571E1DDDB1009A43BF /* BaseHttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseHttpService.h; sourceTree = "<group>"; };
+		53ED1D581E1DDDB1009A43BF /* BaseHttpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseHttpService.m; sourceTree = "<group>"; };
+		53ED1D5B1E1DDDD1009A43BF /* ErrorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorModel.h; sourceTree = "<group>"; };
+		53ED1D5C1E1DDDD1009A43BF /* ErrorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorModel.m; sourceTree = "<group>"; };
+		53ED1D5E1E1DDE59009A43BF /* HttpShiFa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpShiFa.h; sourceTree = "<group>"; };
+		53ED1D5F1E1DDE59009A43BF /* HttpShiFa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpShiFa.m; sourceTree = "<group>"; };
+		53ED1D621E1DDF43009A43BF /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		53ED1D631E1DDF43009A43BF /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		53ED1D651E1DDF57009A43BF /* CommonDeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDeal.h; sourceTree = "<group>"; };
+		53ED1D661E1DDF57009A43BF /* CommonDeal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonDeal.m; sourceTree = "<group>"; };
+		53ED1D681E1DE123009A43BF /* ShiFa_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShiFa_PrefixHeader.pch; sourceTree = "<group>"; };
+		53ED1D6A1E1DE1EE009A43BF /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		53ED1D6B1E1DE1EE009A43BF /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		53ED1D6E1E1DE222009A43BF /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		53ED1D6F1E1DE222009A43BF /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		53ED1D701E1DE222009A43BF /* YBProgressShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBProgressShow.h; sourceTree = "<group>"; };
+		53ED1D711E1DE222009A43BF /* YBProgressShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBProgressShow.m; sourceTree = "<group>"; };
+		53ED1D751E1DE270009A43BF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		53ED1D761E1DE270009A43BF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		53ED1D791E1DEC89009A43BF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		53ED1D7A1E1DEC89009A43BF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		53ED1D7D1E1DECA4009A43BF /* HomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
+		53ED1D7E1E1DECA4009A43BF /* HomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
+		53ED1D811E1DF01F009A43BF /* HomeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewCell.h; sourceTree = "<group>"; };
+		53ED1D821E1DF01F009A43BF /* HomeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewCell.m; sourceTree = "<group>"; };
+		53ED1D851E1E3915009A43BF /* ImageSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageSliderView.h; sourceTree = "<group>"; };
+		53ED1D861E1E3915009A43BF /* ImageSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageSliderView.m; sourceTree = "<group>"; };
+		53ED1D891E1E4413009A43BF /* HomeColloctionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeColloctionView.h; sourceTree = "<group>"; };
+		53ED1D8A1E1E4413009A43BF /* HomeColloctionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeColloctionView.m; sourceTree = "<group>"; };
+		53ED1D8D1E1F6041009A43BF /* HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
+		53ED1D8E1E1F6041009A43BF /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
+		53ED1D911E24B926009A43BF /* HomePushView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePushView.h; sourceTree = "<group>"; };
+		53ED1D921E24B926009A43BF /* HomePushView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePushView.m; sourceTree = "<group>"; };
+		61F09C25C81D32D73350ABE9 /* libPods-ShiFa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShiFa.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C3C4F3B98AD398547DA99BD /* Pods-ShiFa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShiFa.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShiFa/Pods-ShiFa.release.xcconfig"; sourceTree = "<group>"; };
+		A7534FD9892CC47A69893DDC /* libPods-ShiFa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShiFa.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53ED1D0C1E1BA4D3009A43BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C5425945FD6D166A38F895 /* libPods-ShiFa.a in Frameworks */,
+				403D33E680A4FCD18E60F8C3 /* libPods-ShiFa.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53ED1D251E1BA4D3009A43BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53ED1D301E1BA4D3009A43BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B01279B55F2B23621468AA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				010698B06E6FBD1DF2AA35B1 /* Pods-ShiFa.debug.xcconfig */,
+				6C3C4F3B98AD398547DA99BD /* Pods-ShiFa.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5330264D1E2DB50500A6C284 /* MPhotoBrower */ = {
+			isa = PBXGroup;
+			children = (
+				5330264E1E2DB50500A6C284 /* MPhotoBrower.h */,
+				5330264F1E2DB50500A6C284 /* MPhotoBrower.m */,
+			);
+			path = MPhotoBrower;
+			sourceTree = "<group>";
+		};
+		53ED1D061E1BA4D3009A43BF = {
+			isa = PBXGroup;
+			children = (
+				53ED1D471E1DDD53009A43BF /* Classes */,
+				53ED1D511E1DDD53009A43BF /* Common */,
+				53ED1D521E1DDD53009A43BF /* Frameworks */,
+				53ED1D531E1DDD53009A43BF /* Vender */,
+				53ED1D111E1BA4D3009A43BF /* ShiFa */,
+				53ED1D2B1E1BA4D3009A43BF /* ShiFaTests */,
+				53ED1D361E1BA4D3009A43BF /* ShiFaUITests */,
+				53ED1D101E1BA4D3009A43BF /* Products */,
+				1B01279B55F2B23621468AA3 /* Pods */,
+				6F3EC96AE39B74C4A0C8D30A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		53ED1D101E1BA4D3009A43BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D0F1E1BA4D3009A43BF /* ShiFa.app */,
+				53ED1D281E1BA4D3009A43BF /* ShiFaTests.xctest */,
+				53ED1D331E1BA4D3009A43BF /* ShiFaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53ED1D111E1BA4D3009A43BF /* ShiFa */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D151E1BA4D3009A43BF /* AppDelegate.h */,
+				53ED1D161E1BA4D3009A43BF /* AppDelegate.m */,
+				53ED1D1B1E1BA4D3009A43BF /* Main.storyboard */,
+				53ED1D681E1DE123009A43BF /* ShiFa_PrefixHeader.pch */,
+				53ED1D1E1E1BA4D3009A43BF /* Assets.xcassets */,
+				53ED1D201E1BA4D3009A43BF /* LaunchScreen.storyboard */,
+				53ED1D231E1BA4D3009A43BF /* Info.plist */,
+				53ED1D121E1BA4D3009A43BF /* Supporting Files */,
+			);
+			path = ShiFa;
+			sourceTree = "<group>";
+		};
+		53ED1D121E1BA4D3009A43BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D131E1BA4D3009A43BF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53ED1D2B1E1BA4D3009A43BF /* ShiFaTests */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D2C1E1BA4D3009A43BF /* ShiFaTests.m */,
+				53ED1D2E1E1BA4D3009A43BF /* Info.plist */,
+			);
+			path = ShiFaTests;
+			sourceTree = "<group>";
+		};
+		53ED1D361E1BA4D3009A43BF /* ShiFaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D371E1BA4D3009A43BF /* ShiFaUITests.m */,
+				53ED1D391E1BA4D3009A43BF /* Info.plist */,
+			);
+			path = ShiFaUITests;
+			sourceTree = "<group>";
+		};
+		53ED1D471E1DDD53009A43BF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D481E1DDD53009A43BF /* Controls */,
+				53ED1D501E1DDD53009A43BF /* Views */,
+				53ED1D4C1E1DDD53009A43BF /* Models */,
+				53ED1D491E1DDD53009A43BF /* ManageMents */,
+				53ED1D4D1E1DDD53009A43BF /* Services */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		53ED1D481E1DDD53009A43BF /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D781E1DEC7D009A43BF /* Home */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		53ED1D491E1DDD53009A43BF /* ManageMents */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D4A1E1DDD53009A43BF /* AppContextManager */,
+				53ED1D4B1E1DDD53009A43BF /* Apply */,
+			);
+			path = ManageMents;
+			sourceTree = "<group>";
+		};
+		53ED1D4A1E1DDD53009A43BF /* AppContextManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppContextManager;
+			sourceTree = "<group>";
+		};
+		53ED1D4B1E1DDD53009A43BF /* Apply */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Apply;
+			sourceTree = "<group>";
+		};
+		53ED1D4C1E1DDD53009A43BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D8C1E1F6033009A43BF /* HomeModel */,
+				53ED1D5A1E1DDDC8009A43BF /* ErrorModel */,
+				53ED1D541E1DDD82009A43BF /* BaseModel.h */,
+				53ED1D551E1DDD82009A43BF /* BaseModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		53ED1D4D1E1DDD53009A43BF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D4F1E1DDD53009A43BF /* HttpShiFa */,
+				53ED1D571E1DDDB1009A43BF /* BaseHttpService.h */,
+				53ED1D581E1DDDB1009A43BF /* BaseHttpService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		53ED1D4F1E1DDD53009A43BF /* HttpShiFa */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D5E1E1DDE59009A43BF /* HttpShiFa.h */,
+				53ED1D5F1E1DDE59009A43BF /* HttpShiFa.m */,
+			);
+			path = HttpShiFa;
+			sourceTree = "<group>";
+		};
+		53ED1D501E1DDD53009A43BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D7C1E1DEC9A009A43BF /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		53ED1D511E1DDD53009A43BF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D621E1DDF43009A43BF /* Common.h */,
+				53ED1D631E1DDF43009A43BF /* Common.m */,
+				53ED1D611E1DDF15009A43BF /* CommonDeal */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		53ED1D521E1DDD53009A43BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61F09C25C81D32D73350ABE9 /* libPods-ShiFa.a */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		53ED1D531E1DDD53009A43BF /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				5330264D1E2DB50500A6C284 /* MPhotoBrower */,
+				53ED1D741E1DE270009A43BF /* Reachability */,
+				53ED1D6D1E1DE222009A43BF /* MBProgress */,
+				53ED1D691E1DE1EE009A43BF /* MBProgressHUD */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		53ED1D5A1E1DDDC8009A43BF /* ErrorModel */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D5B1E1DDDD1009A43BF /* ErrorModel.h */,
+				53ED1D5C1E1DDDD1009A43BF /* ErrorModel.m */,
+			);
+			path = ErrorModel;
+			sourceTree = "<group>";
+		};
+		53ED1D611E1DDF15009A43BF /* CommonDeal */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D651E1DDF57009A43BF /* CommonDeal.h */,
+				53ED1D661E1DDF57009A43BF /* CommonDeal.m */,
+			);
+			path = CommonDeal;
+			sourceTree = "<group>";
+		};
+		53ED1D691E1DE1EE009A43BF /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D6A1E1DE1EE009A43BF /* MBProgressHUD+Add.h */,
+				53ED1D6B1E1DE1EE009A43BF /* MBProgressHUD+Add.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		53ED1D6D1E1DE222009A43BF /* MBProgress */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D6E1E1DE222009A43BF /* MBProgressHUD.h */,
+				53ED1D6F1E1DE222009A43BF /* MBProgressHUD.m */,
+				53ED1D701E1DE222009A43BF /* YBProgressShow.h */,
+				53ED1D711E1DE222009A43BF /* YBProgressShow.m */,
+			);
+			path = MBProgress;
+			sourceTree = "<group>";
+		};
+		53ED1D741E1DE270009A43BF /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D751E1DE270009A43BF /* Reachability.h */,
+				53ED1D761E1DE270009A43BF /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		53ED1D781E1DEC7D009A43BF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D791E1DEC89009A43BF /* HomeViewController.h */,
+				53ED1D7A1E1DEC89009A43BF /* HomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		53ED1D7C1E1DEC9A009A43BF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D901E24B91A009A43BF /* HomePushView */,
+				53ED1D881E1E440A009A43BF /* HomeColloctionView */,
+				53ED1D841E1E390B009A43BF /* ImageSliderView */,
+				53ED1D801E1DF008009A43BF /* HomeViewCell */,
+				53ED1D7D1E1DECA4009A43BF /* HomeView.h */,
+				53ED1D7E1E1DECA4009A43BF /* HomeView.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		53ED1D801E1DF008009A43BF /* HomeViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D811E1DF01F009A43BF /* HomeViewCell.h */,
+				53ED1D821E1DF01F009A43BF /* HomeViewCell.m */,
+			);
+			path = HomeViewCell;
+			sourceTree = "<group>";
+		};
+		53ED1D841E1E390B009A43BF /* ImageSliderView */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D851E1E3915009A43BF /* ImageSliderView.h */,
+				53ED1D861E1E3915009A43BF /* ImageSliderView.m */,
+			);
+			path = ImageSliderView;
+			sourceTree = "<group>";
+		};
+		53ED1D881E1E440A009A43BF /* HomeColloctionView */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D891E1E4413009A43BF /* HomeColloctionView.h */,
+				53ED1D8A1E1E4413009A43BF /* HomeColloctionView.m */,
+			);
+			path = HomeColloctionView;
+			sourceTree = "<group>";
+		};
+		53ED1D8C1E1F6033009A43BF /* HomeModel */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D8D1E1F6041009A43BF /* HomeModel.h */,
+				53ED1D8E1E1F6041009A43BF /* HomeModel.m */,
+			);
+			path = HomeModel;
+			sourceTree = "<group>";
+		};
+		53ED1D901E24B91A009A43BF /* HomePushView */ = {
+			isa = PBXGroup;
+			children = (
+				53ED1D911E24B926009A43BF /* HomePushView.h */,
+				53ED1D921E24B926009A43BF /* HomePushView.m */,
+			);
+			path = HomePushView;
+			sourceTree = "<group>";
+		};
+		6F3EC96AE39B74C4A0C8D30A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7534FD9892CC47A69893DDC /* libPods-ShiFa.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53ED1D0E1E1BA4D3009A43BF /* ShiFa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53ED1D3C1E1BA4D3009A43BF /* Build configuration list for PBXNativeTarget "ShiFa" */;
+			buildPhases = (
+				3E3DCB3AEB3041BE53DDC0E8 /* [CP] Check Pods Manifest.lock */,
+				53ED1D0B1E1BA4D3009A43BF /* Sources */,
+				53ED1D0C1E1BA4D3009A43BF /* Frameworks */,
+				53ED1D0D1E1BA4D3009A43BF /* Resources */,
+				58DBB0DF6B3987A81A3431E4 /* [CP] Embed Pods Frameworks */,
+				7BC754249EA6415E68282DC4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShiFa;
+			productName = ShiFa;
+			productReference = 53ED1D0F1E1BA4D3009A43BF /* ShiFa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		53ED1D271E1BA4D3009A43BF /* ShiFaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53ED1D3F1E1BA4D3009A43BF /* Build configuration list for PBXNativeTarget "ShiFaTests" */;
+			buildPhases = (
+				53ED1D241E1BA4D3009A43BF /* Sources */,
+				53ED1D251E1BA4D3009A43BF /* Frameworks */,
+				53ED1D261E1BA4D3009A43BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53ED1D2A1E1BA4D3009A43BF /* PBXTargetDependency */,
+			);
+			name = ShiFaTests;
+			productName = ShiFaTests;
+			productReference = 53ED1D281E1BA4D3009A43BF /* ShiFaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		53ED1D321E1BA4D3009A43BF /* ShiFaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53ED1D421E1BA4D3009A43BF /* Build configuration list for PBXNativeTarget "ShiFaUITests" */;
+			buildPhases = (
+				53ED1D2F1E1BA4D3009A43BF /* Sources */,
+				53ED1D301E1BA4D3009A43BF /* Frameworks */,
+				53ED1D311E1BA4D3009A43BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53ED1D351E1BA4D3009A43BF /* PBXTargetDependency */,
+			);
+			name = ShiFaUITests;
+			productName = ShiFaUITests;
+			productReference = 53ED1D331E1BA4D3009A43BF /* ShiFaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53ED1D071E1BA4D3009A43BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = MJJ;
+				TargetAttributes = {
+					53ED1D0E1E1BA4D3009A43BF = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					53ED1D271E1BA4D3009A43BF = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 53ED1D0E1E1BA4D3009A43BF;
+					};
+					53ED1D321E1BA4D3009A43BF = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 53ED1D0E1E1BA4D3009A43BF;
+					};
+				};
+			};
+			buildConfigurationList = 53ED1D0A1E1BA4D3009A43BF /* Build configuration list for PBXProject "ShiFa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53ED1D061E1BA4D3009A43BF;
+			productRefGroup = 53ED1D101E1BA4D3009A43BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53ED1D0E1E1BA4D3009A43BF /* ShiFa */,
+				53ED1D271E1BA4D3009A43BF /* ShiFaTests */,
+				53ED1D321E1BA4D3009A43BF /* ShiFaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53ED1D0D1E1BA4D3009A43BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53ED1D221E1BA4D3009A43BF /* LaunchScreen.storyboard in Resources */,
+				53ED1D1F1E1BA4D3009A43BF /* Assets.xcassets in Resources */,
+				53ED1D1D1E1BA4D3009A43BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53ED1D261E1BA4D3009A43BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53ED1D311E1BA4D3009A43BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E3DCB3AEB3041BE53DDC0E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		58DBB0DF6B3987A81A3431E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShiFa/Pods-ShiFa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BC754249EA6415E68282DC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShiFa/Pods-ShiFa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53ED1D0B1E1BA4D3009A43BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53ED1D8B1E1E4413009A43BF /* HomeColloctionView.m in Sources */,
+				533026501E2DB50500A6C284 /* MPhotoBrower.m in Sources */,
+				53ED1D591E1DDDB1009A43BF /* BaseHttpService.m in Sources */,
+				53ED1D561E1DDD82009A43BF /* BaseModel.m in Sources */,
+				53ED1D731E1DE222009A43BF /* YBProgressShow.m in Sources */,
+				53ED1D7F1E1DECA4009A43BF /* HomeView.m in Sources */,
+				53ED1D171E1BA4D3009A43BF /* AppDelegate.m in Sources */,
+				53ED1D601E1DDE59009A43BF /* HttpShiFa.m in Sources */,
+				53ED1D6C1E1DE1EE009A43BF /* MBProgressHUD+Add.m in Sources */,
+				53ED1D8F1E1F6041009A43BF /* HomeModel.m in Sources */,
+				53ED1D141E1BA4D3009A43BF /* main.m in Sources */,
+				53ED1D831E1DF01F009A43BF /* HomeViewCell.m in Sources */,
+				53ED1D5D1E1DDDD1009A43BF /* ErrorModel.m in Sources */,
+				53ED1D721E1DE222009A43BF /* MBProgressHUD.m in Sources */,
+				53ED1D671E1DDF57009A43BF /* CommonDeal.m in Sources */,
+				53ED1D771E1DE270009A43BF /* Reachability.m in Sources */,
+				53ED1D871E1E3915009A43BF /* ImageSliderView.m in Sources */,
+				53ED1D931E24B926009A43BF /* HomePushView.m in Sources */,
+				53ED1D641E1DDF43009A43BF /* Common.m in Sources */,
+				53ED1D7B1E1DEC89009A43BF /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53ED1D241E1BA4D3009A43BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53ED1D2D1E1BA4D3009A43BF /* ShiFaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53ED1D2F1E1BA4D3009A43BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53ED1D381E1BA4D3009A43BF /* ShiFaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53ED1D2A1E1BA4D3009A43BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53ED1D0E1E1BA4D3009A43BF /* ShiFa */;
+			targetProxy = 53ED1D291E1BA4D3009A43BF /* PBXContainerItemProxy */;
+		};
+		53ED1D351E1BA4D3009A43BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53ED1D0E1E1BA4D3009A43BF /* ShiFa */;
+			targetProxy = 53ED1D341E1BA4D3009A43BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		53ED1D1B1E1BA4D3009A43BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53ED1D1C1E1BA4D3009A43BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		53ED1D201E1BA4D3009A43BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53ED1D211E1BA4D3009A43BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53ED1D3A1E1BA4D3009A43BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53ED1D3B1E1BA4D3009A43BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53ED1D3D1E1BA4D3009A43BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 010698B06E6FBD1DF2AA35B1 /* Pods-ShiFa.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/majiajun/Desktop/ShiFa/ShiFa/ShiFa_PrefixHeader.pch;
+				INFOPLIST_FILE = ShiFa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MJJ.ShiFa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		53ED1D3E1E1BA4D3009A43BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C3C4F3B98AD398547DA99BD /* Pods-ShiFa.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/majiajun/Desktop/ShiFa/ShiFa/ShiFa_PrefixHeader.pch;
+				INFOPLIST_FILE = ShiFa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MJJ.ShiFa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		53ED1D401E1BA4D3009A43BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ShiFaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MJJ.ShiFaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShiFa.app/ShiFa";
+			};
+			name = Debug;
+		};
+		53ED1D411E1BA4D3009A43BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ShiFaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MJJ.ShiFaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShiFa.app/ShiFa";
+			};
+			name = Release;
+		};
+		53ED1D431E1BA4D3009A43BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ShiFaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MJJ.ShiFaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ShiFa;
+			};
+			name = Debug;
+		};
+		53ED1D441E1BA4D3009A43BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ShiFaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MJJ.ShiFaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ShiFa;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53ED1D0A1E1BA4D3009A43BF /* Build configuration list for PBXProject "ShiFa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53ED1D3A1E1BA4D3009A43BF /* Debug */,
+				53ED1D3B1E1BA4D3009A43BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53ED1D3C1E1BA4D3009A43BF /* Build configuration list for PBXNativeTarget "ShiFa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53ED1D3D1E1BA4D3009A43BF /* Debug */,
+				53ED1D3E1E1BA4D3009A43BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53ED1D3F1E1BA4D3009A43BF /* Build configuration list for PBXNativeTarget "ShiFaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53ED1D401E1BA4D3009A43BF /* Debug */,
+				53ED1D411E1BA4D3009A43BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53ED1D421E1BA4D3009A43BF /* Build configuration list for PBXNativeTarget "ShiFaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53ED1D431E1BA4D3009A43BF /* Debug */,
+				53ED1D441E1BA4D3009A43BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53ED1D071E1BA4D3009A43BF /* Project object */;
+}
