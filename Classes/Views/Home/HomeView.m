@@ -83,7 +83,7 @@
     {
         return 75;
     }
-    return kImageH;
+    return kImageH/2;
 }
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

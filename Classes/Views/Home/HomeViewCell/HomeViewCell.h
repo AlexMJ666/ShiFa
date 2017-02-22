@@ -10,6 +10,7 @@
 #import "ImageSliderView.h"
 #import "HomeColloctionView.h"
 #import "HomeModel.h"
+#import <UIImageView+WebCache.h>
 #define kImageH                 kMainScreen_Width*9/16      //图片高度
 @interface HomeViewCell : UITableViewCell
 @property (nonatomic,strong) IBOutlet HomeColloctionView* homeColloctionView;

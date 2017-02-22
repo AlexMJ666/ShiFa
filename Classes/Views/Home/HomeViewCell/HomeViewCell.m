@@ -37,6 +37,14 @@
     }else if (section == 1)
     {
         [homeColloctionView refreshColloction:model.m_itemNamesArr];
+    }else
+    {
+        UIImageView* imgV  = [UIImageView new];
+        imgV.frame = self.bounds;
+        [imgV sd_setImageWithURL:[NSURL URLWithString:@"http://i0.hdslb.com/video/bb/bbc5795cb817c994a474152060f90b5c.jpg"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+            
+        }];
+        [self.contentView addSubview:imgV];
     }
 }
 
