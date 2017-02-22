@@ -120,6 +120,28 @@
                                                     <outlet property="homeColloctionView" destination="mbF-r6-aTH" id="j9H-j5-UH0"/>
                                                 </connections>
                                             </tableViewCell>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="thirdCell" rowHeight="115" id="Ur9-Ca-xDb" customClass="HomeViewCell">
+                                                <rect key="frame" x="0.0" y="131" width="375" height="115"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ur9-Ca-xDb" id="Sum-96-8Q9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="114"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aXz-if-LPI">
+                                                            <rect key="frame" x="8" y="0.0" width="359" height="114"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="aXz-if-LPI" secondAttribute="trailing" constant="8" id="2Ab-0X-acZ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="aXz-if-LPI" secondAttribute="bottom" id="Gny-cv-B3r"/>
+                                                        <constraint firstItem="aXz-if-LPI" firstAttribute="top" secondItem="Sum-96-8Q9" secondAttribute="top" id="L29-x3-rJE"/>
+                                                        <constraint firstItem="aXz-if-LPI" firstAttribute="leading" secondItem="Sum-96-8Q9" secondAttribute="leading" constant="8" id="lMS-62-LsL"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="img" destination="aXz-if-LPI" id="NHj-km-yLe"/>
+                                                </connections>
+                                            </tableViewCell>
                                         </prototypes>
                                         <connections>
                                             <outlet property="dataSource" destination="ivT-ud-7a7" id="bqg-RQ-M3p"/>

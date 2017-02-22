@@ -11,6 +11,7 @@
 		403D33E680A4FCD18E60F8C3 /* libPods-ShiFa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F09C25C81D32D73350ABE9 /* libPods-ShiFa.a */; };
 		533026501E2DB50500A6C284 /* MPhotoBrower.m in Sources */ = {isa = PBXBuildFile; fileRef = 5330264F1E2DB50500A6C284 /* MPhotoBrower.m */; };
 		53DBCEF11E5BE5AD008ED93A /* HomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DBCEF01E5BE5AD008ED93A /* HomeCollectionViewCell.m */; };
+		53DBCF341E5D6630008ED93A /* ThirdHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53DBCF331E5D6630008ED93A /* ThirdHeader.xib */; };
 		53ED1D141E1BA4D3009A43BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D131E1BA4D3009A43BF /* main.m */; };
 		53ED1D171E1BA4D3009A43BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D161E1BA4D3009A43BF /* AppDelegate.m */; };
 		53ED1D1D1E1BA4D3009A43BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53ED1D1B1E1BA4D3009A43BF /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		5330264F1E2DB50500A6C284 /* MPhotoBrower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPhotoBrower.m; sourceTree = "<group>"; };
 		53DBCEEF1E5BE5AD008ED93A /* HomeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewCell.h; sourceTree = "<group>"; };
 		53DBCEF01E5BE5AD008ED93A /* HomeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewCell.m; sourceTree = "<group>"; };
+		53DBCF331E5D6630008ED93A /* ThirdHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdHeader.xib; sourceTree = "<group>"; };
 		53ED1D0F1E1BA4D3009A43BF /* ShiFa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShiFa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53ED1D131E1BA4D3009A43BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		53ED1D151E1BA4D3009A43BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -410,6 +412,7 @@
 				53ED1D801E1DF008009A43BF /* HomeViewCell */,
 				53ED1D7D1E1DECA4009A43BF /* HomeView.h */,
 				53ED1D7E1E1DECA4009A43BF /* HomeView.m */,
+				53DBCF331E5D6630008ED93A /* ThirdHeader.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -577,6 +580,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53DBCF341E5D6630008ED93A /* ThirdHeader.xib in Resources */,
 				53ED1D221E1BA4D3009A43BF /* LaunchScreen.storyboard in Resources */,
 				53ED1D1F1E1BA4D3009A43BF /* Assets.xcassets in Resources */,
 				53ED1D1D1E1BA4D3009A43BF /* Main.storyboard in Resources */,

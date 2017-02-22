@@ -105,9 +105,9 @@
             }
             break;
         case 2:
-            cell = [tableView dequeueReusableCellWithIdentifier:Celled];
+            cell = [tableView dequeueReusableCellWithIdentifier:@"thirdCell"];
             if (!cell) {
-                cell = [[HomeViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:Celled];
+                cell = [[HomeViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"thirdCell"];
             }
             break;
         default:
@@ -130,10 +130,20 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
+    if (section == 2) {
+        return 24;
+    }
     return kHeaderH;
 }
 
-
+-(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    if (section == 2) {
+        NSArray  *appArray= [[NSBundle mainBundle]loadNibNamed:@"ThirdHeader" owner:nil options:nil];
+        return [appArray firstObject];
+    }
+    return nil;
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
