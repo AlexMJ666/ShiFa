@@ -12,6 +12,11 @@
 		533026501E2DB50500A6C284 /* MPhotoBrower.m in Sources */ = {isa = PBXBuildFile; fileRef = 5330264F1E2DB50500A6C284 /* MPhotoBrower.m */; };
 		53DBCEF11E5BE5AD008ED93A /* HomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DBCEF01E5BE5AD008ED93A /* HomeCollectionViewCell.m */; };
 		53DBCF341E5D6630008ED93A /* ThirdHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53DBCF331E5D6630008ED93A /* ThirdHeader.xib */; };
+		53DBCF381E5EAEC3008ED93A /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DBCF371E5EAEC3008ED93A /* LocationViewController.m */; };
+		53DBCF3C1E5EAEE4008ED93A /* CityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DBCF3B1E5EAEE4008ED93A /* CityView.m */; };
+		53DBCF451E5EB07A008ED93A /* cityData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53DBCF441E5EB07A008ED93A /* cityData.plist */; };
+		53DBCF4A1E5EB129008ED93A /* ChineseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DBCF471E5EB129008ED93A /* ChineseString.m */; };
+		53DBCF501E5EB5BB008ED93A /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = 53DBCF4E1E5EB5BB008ED93A /* pinyin.c */; };
 		53ED1D141E1BA4D3009A43BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D131E1BA4D3009A43BF /* main.m */; };
 		53ED1D171E1BA4D3009A43BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D161E1BA4D3009A43BF /* AppDelegate.m */; };
 		53ED1D1D1E1BA4D3009A43BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53ED1D1B1E1BA4D3009A43BF /* Main.storyboard */; };
@@ -62,6 +67,15 @@
 		53DBCEEF1E5BE5AD008ED93A /* HomeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewCell.h; sourceTree = "<group>"; };
 		53DBCEF01E5BE5AD008ED93A /* HomeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewCell.m; sourceTree = "<group>"; };
 		53DBCF331E5D6630008ED93A /* ThirdHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdHeader.xib; sourceTree = "<group>"; };
+		53DBCF361E5EAEC3008ED93A /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		53DBCF371E5EAEC3008ED93A /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		53DBCF3A1E5EAEE4008ED93A /* CityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityView.h; sourceTree = "<group>"; };
+		53DBCF3B1E5EAEE4008ED93A /* CityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityView.m; sourceTree = "<group>"; };
+		53DBCF441E5EB07A008ED93A /* cityData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityData.plist; sourceTree = SOURCE_ROOT; };
+		53DBCF461E5EB129008ED93A /* ChineseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseString.h; sourceTree = "<group>"; };
+		53DBCF471E5EB129008ED93A /* ChineseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseString.m; sourceTree = "<group>"; };
+		53DBCF4E1E5EB5BB008ED93A /* pinyin.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = pinyin.c; sourceTree = "<group>"; };
+		53DBCF4F1E5EB5BB008ED93A /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
 		53ED1D0F1E1BA4D3009A43BF /* ShiFa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShiFa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53ED1D131E1BA4D3009A43BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		53ED1D151E1BA4D3009A43BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -170,6 +184,35 @@
 			path = HomeColloctionCell;
 			sourceTree = "<group>";
 		};
+		53DBCF351E5EAEB6008ED93A /* LocationVC */ = {
+			isa = PBXGroup;
+			children = (
+				53DBCF361E5EAEC3008ED93A /* LocationViewController.h */,
+				53DBCF371E5EAEC3008ED93A /* LocationViewController.m */,
+			);
+			path = LocationVC;
+			sourceTree = "<group>";
+		};
+		53DBCF391E5EAED5008ED93A /* CityTableView */ = {
+			isa = PBXGroup;
+			children = (
+				53DBCF3A1E5EAEE4008ED93A /* CityView.h */,
+				53DBCF3B1E5EAEE4008ED93A /* CityView.m */,
+			);
+			path = CityTableView;
+			sourceTree = "<group>";
+		};
+		53DBCF3D1E5EB04D008ED93A /* LocationDepend */ = {
+			isa = PBXGroup;
+			children = (
+				53DBCF4E1E5EB5BB008ED93A /* pinyin.c */,
+				53DBCF4F1E5EB5BB008ED93A /* pinyin.h */,
+				53DBCF461E5EB129008ED93A /* ChineseString.h */,
+				53DBCF471E5EB129008ED93A /* ChineseString.m */,
+			);
+			path = LocationDepend;
+			sourceTree = "<group>";
+		};
 		53ED1D061E1BA4D3009A43BF = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +242,7 @@
 		53ED1D111E1BA4D3009A43BF /* ShiFa */ = {
 			isa = PBXGroup;
 			children = (
+				53DBCF441E5EB07A008ED93A /* cityData.plist */,
 				53ED1D151E1BA4D3009A43BF /* AppDelegate.h */,
 				53ED1D161E1BA4D3009A43BF /* AppDelegate.m */,
 				53ED1D1B1E1BA4D3009A43BF /* Main.storyboard */,
@@ -339,6 +383,7 @@
 		53ED1D531E1DDD53009A43BF /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				53DBCF3D1E5EB04D008ED93A /* LocationDepend */,
 				5330264D1E2DB50500A6C284 /* MPhotoBrower */,
 				53ED1D741E1DE270009A43BF /* Reachability */,
 				53ED1D6D1E1DE222009A43BF /* MBProgress */,
@@ -397,6 +442,7 @@
 		53ED1D781E1DEC7D009A43BF /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				53DBCF351E5EAEB6008ED93A /* LocationVC */,
 				53ED1D791E1DEC89009A43BF /* HomeViewController.h */,
 				53ED1D7A1E1DEC89009A43BF /* HomeViewController.m */,
 			);
@@ -406,6 +452,7 @@
 		53ED1D7C1E1DEC9A009A43BF /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				53DBCF391E5EAED5008ED93A /* CityTableView */,
 				53ED1D901E24B91A009A43BF /* HomePushView */,
 				53ED1D881E1E440A009A43BF /* HomeColloctionView */,
 				53ED1D841E1E390B009A43BF /* ImageSliderView */,
@@ -582,6 +629,7 @@
 			files = (
 				53DBCF341E5D6630008ED93A /* ThirdHeader.xib in Resources */,
 				53ED1D221E1BA4D3009A43BF /* LaunchScreen.storyboard in Resources */,
+				53DBCF451E5EB07A008ED93A /* cityData.plist in Resources */,
 				53ED1D1F1E1BA4D3009A43BF /* Assets.xcassets in Resources */,
 				53ED1D1D1E1BA4D3009A43BF /* Main.storyboard in Resources */,
 			);
@@ -659,12 +707,15 @@
 				53ED1D8B1E1E4413009A43BF /* HomeColloctionView.m in Sources */,
 				533026501E2DB50500A6C284 /* MPhotoBrower.m in Sources */,
 				53ED1D591E1DDDB1009A43BF /* BaseHttpService.m in Sources */,
+				53DBCF381E5EAEC3008ED93A /* LocationViewController.m in Sources */,
 				53ED1D561E1DDD82009A43BF /* BaseModel.m in Sources */,
 				53ED1D731E1DE222009A43BF /* YBProgressShow.m in Sources */,
 				53ED1D7F1E1DECA4009A43BF /* HomeView.m in Sources */,
 				53ED1D171E1BA4D3009A43BF /* AppDelegate.m in Sources */,
+				53DBCF4A1E5EB129008ED93A /* ChineseString.m in Sources */,
 				53ED1D601E1DDE59009A43BF /* HttpShiFa.m in Sources */,
 				53ED1D6C1E1DE1EE009A43BF /* MBProgressHUD+Add.m in Sources */,
+				53DBCF3C1E5EAEE4008ED93A /* CityView.m in Sources */,
 				53ED1D8F1E1F6041009A43BF /* HomeModel.m in Sources */,
 				53ED1D141E1BA4D3009A43BF /* main.m in Sources */,
 				53DBCEF11E5BE5AD008ED93A /* HomeCollectionViewCell.m in Sources */,
@@ -673,6 +724,7 @@
 				53ED1D721E1DE222009A43BF /* MBProgressHUD.m in Sources */,
 				53ED1D671E1DDF57009A43BF /* CommonDeal.m in Sources */,
 				53ED1D771E1DE270009A43BF /* Reachability.m in Sources */,
+				53DBCF501E5EB5BB008ED93A /* pinyin.c in Sources */,
 				53ED1D871E1E3915009A43BF /* ImageSliderView.m in Sources */,
 				53ED1D931E24B926009A43BF /* HomePushView.m in Sources */,
 				53ED1D641E1DDF43009A43BF /* Common.m in Sources */,

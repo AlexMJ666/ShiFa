@@ -10,11 +10,11 @@
 
 @interface HomeViewController ()<HomeViewDelegate>
 @property(nonatomic,strong) NSMutableDictionary* dateMutiDic;
+@property(nonatomic,strong) UIButton* leftBtn;
 @end
 
 @implementation HomeViewController
 @synthesize p_homeView = m_homeView;
-
 -(void)dateArr
 {
     self.dateMutiDic = [NSMutableDictionary new];
@@ -29,8 +29,36 @@
     
     NSArray* itemArr = [NSArray arrayWithObjects:@"汽机油",@"蓄电池",@"轮胎",@"更多",nil];
     [CommonDeal setSafetyObject:itemArr forKey:@"itemNamesArr" andDic:self.dateMutiDic];
+    
+    UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]
+                                       initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+                                       target:nil action:nil];
+    negativeSpacer.width = -20;
+    self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:negativeSpacer, [[UIBarButtonItem alloc]initWithCustomView:self.leftBtn], nil];
 }
 
+-(UIButton*)leftBtn
+{
+    if (!_leftBtn) {
+        _leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _leftBtn.frame = CGRectMake(0, 0, 44, 64);
+        [_leftBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        _leftBtn.titleLabel.font = [UIFont systemFontOfSize:10];
+        [_leftBtn addTarget:self action:@selector(leftBtnTouch:) forControlEvents:UIControlEventTouchUpInside];
+        [_leftBtn setImage:[UIImage imageNamed:@"btn_location"] forState:UIControlStateNormal];
+        [_leftBtn setTitle:self.locationCity forState:UIControlStateNormal];
+        _leftBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
+        [_leftBtn setTitleEdgeInsets:UIEdgeInsetsMake(_leftBtn.imageView.frame.size.height +10,-_leftBtn.imageView.frame.size.width, 0.0,0.0)];
+        [_leftBtn setImageEdgeInsets:UIEdgeInsetsMake(0.0, 0.0,0.0, -_leftBtn.titleLabel.bounds.size.width)];
+    }
+    return _leftBtn;
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [_leftBtn setTitle:self.locationCity forState:UIControlStateNormal];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self dateArr];
@@ -44,6 +72,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)leftBtnTouch:(id)sender
+{
+    [self performSegueWithIdentifier:@"locationVCShow" sender:nil];
+}
 /*
 #pragma mark - Navigation
 

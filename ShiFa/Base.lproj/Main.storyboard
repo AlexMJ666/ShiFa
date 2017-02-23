@@ -26,6 +26,47 @@
             </objects>
             <point key="canvasLocation" x="-2950" y="165"/>
         </scene>
+        <!--Location View Controller-->
+        <scene sceneID="q3l-ry-R2q">
+            <objects>
+                <viewController id="gcZ-hp-tbX" customClass="LocationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wLH-By-kaX"/>
+                        <viewControllerLayoutGuide type="bottom" id="7ks-yR-p68"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FND-VO-D0n" customClass="CityView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ygb-tK-Ns3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="FND-VO-D0n" id="jjA-SX-Lq0"/>
+                                    <outlet property="delegate" destination="FND-VO-D0n" id="you-vu-3U8"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Ygb-tK-Ns3" secondAttribute="bottom" id="CEF-NP-zFs"/>
+                            <constraint firstItem="Ygb-tK-Ns3" firstAttribute="top" secondItem="FND-VO-D0n" secondAttribute="top" id="NzB-RA-FRL"/>
+                            <constraint firstAttribute="trailing" secondItem="Ygb-tK-Ns3" secondAttribute="trailing" id="yIb-7G-2zz"/>
+                            <constraint firstItem="Ygb-tK-Ns3" firstAttribute="leading" secondItem="FND-VO-D0n" secondAttribute="leading" id="yXB-KG-a6l"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="p_tableView" destination="Ygb-tK-Ns3" id="Dto-I7-FOw"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="KD5-qq-UXz"/>
+                    <connections>
+                        <outlet property="p_cityView" destination="FND-VO-D0n" id="jCZ-LB-pzg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gWh-Ye-Gwz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3900" y="927.88605697151434"/>
+        </scene>
         <!--首页-->
         <scene sceneID="ato-fn-TpM">
             <objects>
@@ -173,6 +214,7 @@
                     <connections>
                         <outlet property="p_homeView" destination="ivT-ud-7a7" id="u6c-dM-CfS"/>
                         <outlet property="searchDisplayController" destination="0ba-vz-Fk3" id="heX-vA-YHo"/>
+                        <segue destination="gcZ-hp-tbX" kind="show" identifier="locationVCShow" id="Jle-z2-iwV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X1D-N9-PmW" userLabel="First Responder" sceneMemberID="firstResponder"/>

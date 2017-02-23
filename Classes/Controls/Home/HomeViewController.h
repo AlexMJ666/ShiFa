@@ -13,4 +13,5 @@
     HomeView* m_homeView;
 }
 @property (nonatomic, strong) IBOutlet HomeView *p_homeView;
+@property (nonatomic, strong) NSString* locationCity;
 @end
