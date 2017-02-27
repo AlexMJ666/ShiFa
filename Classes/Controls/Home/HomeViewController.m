@@ -11,6 +11,7 @@
 @interface HomeViewController ()<HomeViewDelegate>
 @property(nonatomic,strong) NSMutableDictionary* dateMutiDic;
 @property(nonatomic,strong) UIButton* leftBtn;
+@property(nonatomic,strong) UIButton* rightBtn;
 @end
 
 @implementation HomeViewController
@@ -33,26 +34,50 @@
     UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]
                                        initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
                                        target:nil action:nil];
-    negativeSpacer.width = -20;
+    negativeSpacer.width = -10;
     self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:negativeSpacer, [[UIBarButtonItem alloc]initWithCustomView:self.leftBtn], nil];
+
+    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:negativeSpacer, [[UIBarButtonItem alloc]initWithCustomView:self.rightBtn], nil];
 }
 
 -(UIButton*)leftBtn
 {
     if (!_leftBtn) {
+        self.locationCity = @"杭州";
         _leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _leftBtn.frame = CGRectMake(0, 0, 44, 64);
+        _leftBtn.frame = CGRectMake(0, 0, 44, 44);
         [_leftBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         _leftBtn.titleLabel.font = [UIFont systemFontOfSize:10];
+        _leftBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
         [_leftBtn addTarget:self action:@selector(leftBtnTouch:) forControlEvents:UIControlEventTouchUpInside];
         [_leftBtn setImage:[UIImage imageNamed:@"btn_location"] forState:UIControlStateNormal];
-        [_leftBtn setTitle:self.locationCity forState:UIControlStateNormal];
         _leftBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
-        [_leftBtn setTitleEdgeInsets:UIEdgeInsetsMake(_leftBtn.imageView.frame.size.height +10,-_leftBtn.imageView.frame.size.width, 0.0,0.0)];
-        [_leftBtn setImageEdgeInsets:UIEdgeInsetsMake(0.0, 0.0,0.0, -_leftBtn.titleLabel.bounds.size.width)];
+        //_leftBtn.titleEdgeInsets = UIEdgeInsetsMake(30, -20, 0, 0);
+        [_leftBtn setTitleEdgeInsets:UIEdgeInsetsMake(_leftBtn.imageView.frame.size.height ,-_leftBtn.imageView.frame.size.width, 0.0,0.0)];
+        [_leftBtn setImageEdgeInsets:UIEdgeInsetsMake(-10, 10.0,0.0, -_leftBtn.titleLabel.bounds.size.width)];
     }
     return _leftBtn;
 }
+
+-(UIButton*)rightBtn
+{
+    if (!_rightBtn) {
+        _rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _rightBtn.frame = CGRectMake(0, 0, 44, 44);
+        [_rightBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        _rightBtn.titleLabel.font = [UIFont systemFontOfSize:10];
+        _rightBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
+        [_rightBtn addTarget:self action:@selector(rightBtnTouch:) forControlEvents:UIControlEventTouchUpInside];
+        [_rightBtn setTitle:@"购物车" forState:UIControlStateNormal];
+        [_rightBtn setImage:[UIImage imageNamed:@"btn_cart"] forState:UIControlStateNormal];
+        _rightBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
+        //_leftBtn.titleEdgeInsets = UIEdgeInsetsMake(30, -20, 0, 0);
+        [_rightBtn setTitleEdgeInsets:UIEdgeInsetsMake(_rightBtn.imageView.frame.size.height+10 ,-_rightBtn.imageView.frame.size.width+5, 0.0,0.0)];
+        [_rightBtn setImageEdgeInsets:UIEdgeInsetsMake(-10, 10.0,0.0, -_rightBtn.titleLabel.bounds.size.width)];
+    }
+    return _rightBtn;
+}
+
 
 -(void)viewDidAppear:(BOOL)animated
 {
@@ -76,6 +101,9 @@
 {
     [self performSegueWithIdentifier:@"locationVCShow" sender:nil];
 }
+
+-(void)rightBtnTouch:(id)sender
+{}
 /*
 #pragma mark - Navigation
 

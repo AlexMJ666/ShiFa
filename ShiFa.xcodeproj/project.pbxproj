@@ -17,6 +17,8 @@
 		53DBCF451E5EB07A008ED93A /* cityData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53DBCF441E5EB07A008ED93A /* cityData.plist */; };
 		53DBCF4A1E5EB129008ED93A /* ChineseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DBCF471E5EB129008ED93A /* ChineseString.m */; };
 		53DBCF501E5EB5BB008ED93A /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = 53DBCF4E1E5EB5BB008ED93A /* pinyin.c */; };
+		53DBCF581E64016A008ED93A /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DBCF571E64016A008ED93A /* SearchViewController.m */; };
+		53DBCF5B1E640177008ED93A /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DBCF5A1E640177008ED93A /* SearchView.m */; };
 		53ED1D141E1BA4D3009A43BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D131E1BA4D3009A43BF /* main.m */; };
 		53ED1D171E1BA4D3009A43BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D161E1BA4D3009A43BF /* AppDelegate.m */; };
 		53ED1D1D1E1BA4D3009A43BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53ED1D1B1E1BA4D3009A43BF /* Main.storyboard */; };
@@ -76,6 +78,10 @@
 		53DBCF471E5EB129008ED93A /* ChineseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseString.m; sourceTree = "<group>"; };
 		53DBCF4E1E5EB5BB008ED93A /* pinyin.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = pinyin.c; sourceTree = "<group>"; };
 		53DBCF4F1E5EB5BB008ED93A /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
+		53DBCF561E64016A008ED93A /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		53DBCF571E64016A008ED93A /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		53DBCF591E640177008ED93A /* SearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchView.h; sourceTree = "<group>"; };
+		53DBCF5A1E640177008ED93A /* SearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchView.m; sourceTree = "<group>"; };
 		53ED1D0F1E1BA4D3009A43BF /* ShiFa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShiFa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53ED1D131E1BA4D3009A43BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		53ED1D151E1BA4D3009A43BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -213,6 +219,24 @@
 			path = LocationDepend;
 			sourceTree = "<group>";
 		};
+		53DBCF511E640138008ED93A /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				53DBCF591E640177008ED93A /* SearchView.h */,
+				53DBCF5A1E640177008ED93A /* SearchView.m */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		53DBCF551E640162008ED93A /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				53DBCF561E64016A008ED93A /* SearchViewController.h */,
+				53DBCF571E64016A008ED93A /* SearchViewController.m */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		53ED1D061E1BA4D3009A43BF = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +320,7 @@
 		53ED1D481E1DDD53009A43BF /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				53DBCF551E640162008ED93A /* Search */,
 				53ED1D781E1DEC7D009A43BF /* Home */,
 			);
 			path = Controls;
@@ -357,6 +382,7 @@
 		53ED1D501E1DDD53009A43BF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				53DBCF511E640138008ED93A /* Search */,
 				53ED1D7C1E1DEC9A009A43BF /* Home */,
 			);
 			path = Views;
@@ -588,6 +614,7 @@
 				TargetAttributes = {
 					53ED1D0E1E1BA4D3009A43BF = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = S68G4DDNSL;
 						ProvisioningStyle = Automatic;
 					};
 					53ED1D271E1BA4D3009A43BF = {
@@ -713,11 +740,13 @@
 				53ED1D7F1E1DECA4009A43BF /* HomeView.m in Sources */,
 				53ED1D171E1BA4D3009A43BF /* AppDelegate.m in Sources */,
 				53DBCF4A1E5EB129008ED93A /* ChineseString.m in Sources */,
+				53DBCF5B1E640177008ED93A /* SearchView.m in Sources */,
 				53ED1D601E1DDE59009A43BF /* HttpShiFa.m in Sources */,
 				53ED1D6C1E1DE1EE009A43BF /* MBProgressHUD+Add.m in Sources */,
 				53DBCF3C1E5EAEE4008ED93A /* CityView.m in Sources */,
 				53ED1D8F1E1F6041009A43BF /* HomeModel.m in Sources */,
 				53ED1D141E1BA4D3009A43BF /* main.m in Sources */,
+				53DBCF581E64016A008ED93A /* SearchViewController.m in Sources */,
 				53DBCEF11E5BE5AD008ED93A /* HomeCollectionViewCell.m in Sources */,
 				53ED1D831E1DF01F009A43BF /* HomeViewCell.m in Sources */,
 				53ED1D5D1E1DDDD1009A43BF /* ErrorModel.m in Sources */,
@@ -879,7 +908,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = S68G4DDNSL;
 				GCC_PREFIX_HEADER = /Users/majiajun/Desktop/ShiFa/ShiFa/ShiFa_PrefixHeader.pch;
 				INFOPLIST_FILE = ShiFa/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -895,7 +924,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = S68G4DDNSL;
 				GCC_PREFIX_HEADER = /Users/majiajun/Desktop/ShiFa/ShiFa/ShiFa_PrefixHeader.pch;
 				INFOPLIST_FILE = ShiFa/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
