@@ -52,6 +52,8 @@
     return _rightBtn;
 }
 
+-(void)rightBtnTouch:(id)sender
+{}
 /*
 #pragma mark - Navigation
 

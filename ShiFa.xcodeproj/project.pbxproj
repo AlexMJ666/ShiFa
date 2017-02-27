@@ -19,6 +19,7 @@
 		53DBCF501E5EB5BB008ED93A /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = 53DBCF4E1E5EB5BB008ED93A /* pinyin.c */; };
 		53DBCF581E64016A008ED93A /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DBCF571E64016A008ED93A /* SearchViewController.m */; };
 		53DBCF5B1E640177008ED93A /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DBCF5A1E640177008ED93A /* SearchView.m */; };
+		53DBCF5F1E640518008ED93A /* SearchFirstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DBCF5E1E640518008ED93A /* SearchFirstCell.m */; };
 		53ED1D141E1BA4D3009A43BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D131E1BA4D3009A43BF /* main.m */; };
 		53ED1D171E1BA4D3009A43BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED1D161E1BA4D3009A43BF /* AppDelegate.m */; };
 		53ED1D1D1E1BA4D3009A43BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53ED1D1B1E1BA4D3009A43BF /* Main.storyboard */; };
@@ -82,6 +83,8 @@
 		53DBCF571E64016A008ED93A /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		53DBCF591E640177008ED93A /* SearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchView.h; sourceTree = "<group>"; };
 		53DBCF5A1E640177008ED93A /* SearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchView.m; sourceTree = "<group>"; };
+		53DBCF5D1E640518008ED93A /* SearchFirstCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchFirstCell.h; sourceTree = "<group>"; };
+		53DBCF5E1E640518008ED93A /* SearchFirstCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchFirstCell.m; sourceTree = "<group>"; };
 		53ED1D0F1E1BA4D3009A43BF /* ShiFa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShiFa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53ED1D131E1BA4D3009A43BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		53ED1D151E1BA4D3009A43BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -222,6 +225,7 @@
 		53DBCF511E640138008ED93A /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				53DBCF5C1E640507008ED93A /* SearchFirstCell */,
 				53DBCF591E640177008ED93A /* SearchView.h */,
 				53DBCF5A1E640177008ED93A /* SearchView.m */,
 			);
@@ -235,6 +239,15 @@
 				53DBCF571E64016A008ED93A /* SearchViewController.m */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		53DBCF5C1E640507008ED93A /* SearchFirstCell */ = {
+			isa = PBXGroup;
+			children = (
+				53DBCF5D1E640518008ED93A /* SearchFirstCell.h */,
+				53DBCF5E1E640518008ED93A /* SearchFirstCell.m */,
+			);
+			path = SearchFirstCell;
 			sourceTree = "<group>";
 		};
 		53ED1D061E1BA4D3009A43BF = {
@@ -753,6 +766,7 @@
 				53ED1D721E1DE222009A43BF /* MBProgressHUD.m in Sources */,
 				53ED1D671E1DDF57009A43BF /* CommonDeal.m in Sources */,
 				53ED1D771E1DE270009A43BF /* Reachability.m in Sources */,
+				53DBCF5F1E640518008ED93A /* SearchFirstCell.m in Sources */,
 				53DBCF501E5EB5BB008ED93A /* pinyin.c in Sources */,
 				53ED1D871E1E3915009A43BF /* ImageSliderView.m in Sources */,
 				53ED1D931E24B926009A43BF /* HomePushView.m in Sources */,
