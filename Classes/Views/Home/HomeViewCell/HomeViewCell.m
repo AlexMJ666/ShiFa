@@ -7,7 +7,7 @@
 //
 
 #import "HomeViewCell.h"
-
+#import <objc/runtime.h>
 @interface HomeViewCell()<ImageSliderViewDelegate>
 
 @end
@@ -23,6 +23,34 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+//- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+//    
+//    if (!self.isUserInteractionEnabled || self.isHidden || self.alpha <= 0.01) {
+//        return nil;
+//    }
+//
+//    for (UIView *subview in [self.subviews reverseObjectEnumerator]) {
+//        CGPoint convertedPoint = [subview convertPoint:point fromView:self];
+//        UIView *hitTestView = [subview hitTest:convertedPoint withEvent:event];
+//        if (hitTestView) {
+//            return hitTestView;
+//        }
+//    }
+//    return self;
+//
+//}
+- (UIView*)hitTest:(CGPoint)point withEvent:(UIEvent*)event
+{
+    for (UIView* view in self.subviews) {
+        if ([view isKindOfClass:[UIScrollView class]])
+        {
+            return [view hitTest:point withEvent:event];
+        }
+        
+    }
+    return self;
 }
 
 -(void)addDifferentCellWFromSection:(NSInteger)section andCell:(UITableViewCell*)cell andDate:(NSDictionary *)dic
